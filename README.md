@@ -32,3 +32,69 @@ O objetivo deste sistema é fornecer uma interface intuitiva e eficiente para a 
 ### Banco de Dados
 - SQLite
 - Firebase
+
+### Backlog do Produto
+1. **Como usuário, gostaria de selecionar uma marca de carro para ver os modelos disponíveis**
+2. **Como usuário, gostaria de escolher um modelo após selecionar uma marca para ver os anos disponíveis**
+3. **Como usuário, gostaria de selecionar um ano para visualizar informações detalhadas do veículo**
+4. **Como usuário, gostaria de consultar o IPVA do veículo selecionado**
+5. **Como usuário, gostaria de ver um ranking dos veículos mais baratos**
+6. **Como usuário, gostaria de ver um ranking dos veículos mais caros**
+7. **Como usuário, quero visualizar um histórico de preços de um modelo específico nos últimos anos**
+8. **Como usuário, gostaria de me cadastrar no sistema para acessar funcionalidades exclusivas**
+9. **Como usuário cadastrado, gostaria de ter uma página de perfil para gerenciar minhas informações**
+10. **Como usuário, gostaria de favoritar veículos para acessá-los rapidamente**
+11. **Como usuário, quero fazer login no sistema para acessar meus modelos favoritos**
+12. **Como usuário, gostaria de poder me deslogar do sistema**
+13. **Como usuário, gostaria de visualizar minha lista de modelos favoritos após fazer login**
+14. **Como usuário, quero ver o histórico de modelos que consultei**
+15. **Como usuário, desejo remover modelos da minha lista de favoritos**
+
+### Backlog do Sprint #1
+- **História #1: Como usuário, gostaria de selecionar uma marca de carro para ver os modelos disponíveis**
+  - Pesquisar API FIPE e entender como buscar marcas [Victor]
+  - Desenvolver a funcionalidade no backend para buscar marcas [Vitor]
+  - Implementar interface de usuário para seleção de marcas [Victor]
+  - Integrar interface de usuário com a API do backend [Fred]
+
+- **História #2: Como usuário, gostaria de escolher um modelo após selecionar uma marca para ver os anos disponíveis**
+  - Adaptar a API do backend para buscar modelos baseado na marca [Vitor]
+  - Desenvolver componente de interface para listar modelos [Victor]
+  - Implementar lógica de seleção de modelo e busca de anos [Vitor]
+  - Testar fluxo de seleção de marca, modelo e ano [Fred]
+
+- **História #3: Como usuário, gostaria de selecionar um ano para visualizar informações detalhadas do veículo**
+  - Desenvolver endpoint no backend para buscar informações do veículo [Vitor]
+  - Criar tela de detalhes do veículo na interface do usuário [Victor]
+  - Implementar chamada à API e exibição de dados na interface [Victor]
+  - Realizar testes de usabilidade e corrigir bugs [Fred]
+
+- **História #4: Como usuário, gostaria de consultar o IPVA do veículo selecionado**
+  - Investigar integração com APIs de consulta de IPVA [Vitor]
+  - Implementar lógica de cálculo ou integração de IPVA no backend [Fred]
+  - Desenvolver funcionalidade na interface para exibir IPVA [Victor]
+  - Testar e validar a exibição correta do IPVA [Fred]
+
+- **História #5: Como usuário, gostaria de ver um ranking dos veículos mais baratos**
+  - Implementar algoritmo de ranking crescente no backend [Vitor]
+  - Desenvolver página de ranking na interface do usuário [Victor]
+  - Integrar dados do backend na página de ranking [Fred]
+  - Testar ordenação e exibição dos rankings [Fred]
+
+- **História #6: Como usuário, gostaria de ver um ranking dos veículos mais caros**
+  - Implementar algoritmo de ranking decrescente no backend [Vitor]
+  - Desenvolver página de ranking na interface do usuário [Victor]
+  - Integrar dados do backend na página de ranking [Victor]
+  - Testar ordenação e exibição dos rankings [Fred]
+
+- **História #7: Como usuário, quero visualizar um histórico de preços de um modelo específico nos últimos anos**
+  - Desenvolver funcionalidade de histórico de preços no backend [Vitor]
+  - Criar componente gráfico para histórico de preços na interface [Victor]
+  - Integrar dados históricos do backend no gráfico [Victor]
+  - Testar exibição e precisão dos dados históricos [Fred]
+
+- **História #8: Como usuário, gostaria de me cadastrar no sistema para acessar funcionalidades exclusivas**
+  - Implementar sistema de autenticação no backend [Fred]
+  - Desenvolver formulário de cadastro na interface do usuário [Victor]
+  - Integrar formulário de cadastro com o backend [Victor]
+  - Testar processo de cadastro e autenticação [Vitor]
