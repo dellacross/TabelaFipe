@@ -40,7 +40,7 @@ O objetivo deste sistema é fornecer uma interface intuitiva e eficiente para a 
 4. **Como usuário, gostaria de consultar o IPVA do veículo selecionado**
 5. **Como usuário, gostaria de ver um ranking dos veículos mais baratos**
 6. **Como usuário, gostaria de ver um ranking dos veículos mais caros**
-7. **Como usuário, quero visualizar um histórico de preços de um modelo específico nos últimos anos**
+7. **Como usuário, gostaria de fazer uma busca por um modelo de veículo específico direto pelo seu nome**
 8. **Como usuário, gostaria de me cadastrar no sistema para acessar funcionalidades exclusivas**
 9. **Como usuário cadastrado, gostaria de ter uma página de perfil para gerenciar minhas informações**
 10. **Como usuário, gostaria de favoritar veículos para acessá-los rapidamente**
