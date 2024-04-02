@@ -23,8 +23,10 @@ O objetivo deste sistema é fornecer uma interface intuitiva e eficiente para a 
 - Javascript
 - HTML5
 - CSS3
-- Node.js
 - Python
+
+### Ambiente de Execução (server)
+- Node.js
 
 ### Framework
 - ReactJS
