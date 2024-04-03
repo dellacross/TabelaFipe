@@ -42,7 +42,7 @@ O objetivo deste sistema é fornecer uma interface intuitiva e eficiente para a 
 4. **Como usuário, gostaria de consultar o IPVA do veículo selecionado**
 5. **Como usuário, gostaria de ver um ranking dos veículos mais baratos**
 6. **Como usuário, gostaria de ver um ranking dos veículos mais caros**
-7. **Como usuário, gostaria de fazer uma busca por um modelo de veículo específico direto pelo seu nome**
+7. **Como usuário, gostaria de fazer uma comparação entre dois veículos**
 8. **Como usuário, gostaria de me cadastrar no sistema para acessar funcionalidades exclusivas**
 9. **Como usuário cadastrado, gostaria de ter uma página de perfil para gerenciar minhas informações**
 10. **Como usuário, gostaria de favoritar veículos para acessá-los rapidamente**
@@ -89,11 +89,10 @@ O objetivo deste sistema é fornecer uma interface intuitiva e eficiente para a 
   - Integrar dados do backend na página de ranking [Victor]
   - Testar ordenação e exibição dos rankings [Fred]
 
-- **História #7: Como usuário, quero visualizar um histórico de preços de um modelo específico nos últimos anos**
-  - Desenvolver funcionalidade de histórico de preços no backend [Vitor]
-  - Criar componente gráfico para histórico de preços na interface [Victor]
-  - Integrar dados históricos do backend no gráfico [Victor]
-  - Testar exibição e precisão dos dados históricos [Fred]
+- **História #7: Como usuário, gostaria de fazer uma comparação entre dois veículos**
+  - Desenvolver funcionalidade de comparação entre os dados dos veículos [Vitor]
+  - Criar componente para exibição dos dados dos veículos [Victor]
+  - Testar exibição e precisão das comparações [Fred]
 
 - **História #8: Como usuário, gostaria de me cadastrar no sistema para acessar funcionalidades exclusivas**
   - Implementar sistema de autenticação no backend [Fred]
