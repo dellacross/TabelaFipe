@@ -1,0 +1,39 @@
+#ranking-card {
+    min-width: 800px;
+    height: 600px;
+    flex-wrap: wrap;
+    background-color: #e7e7e7;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 8px #a6a6a6, -5px -5px 8px #dbdbdb;
+}
+
+#ranking-card > header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(185, 37, 37);
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+#ranking-card > span {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 75px;
+}
+
+.display-none {
+    display: none !important;
+}

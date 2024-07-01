@@ -1,0 +1,69 @@
+#wrapper > main > #result-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#result-container > header {
+    width: 100%;
+    background-color: #ccc;
+    border-bottom: 2px solid rgb(185, 37, 37);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+#result-container > header span {
+    margin: 0 auto;
+    font-size: 1.6rem;
+    padding-left: 200px;
+}
+
+#result-container > header input {
+    width: 250px;
+    box-shadow: inset 5px 5px 8px #a6a6a6, inset -5px -5px 8px #dbdbdb;
+    border: none;
+    padding-left: 20px;
+    border-radius: 15px;
+    height: 30px;
+    background-color: transparent;
+}
+
+#result-container > header input::placeholder {
+    color: #000;
+    font-size: 1.1em;
+}
+
+#models-cards-container {
+    height: calc(100% - 50px);
+    width: 100%;
+    display: flex;
+    padding: 25px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    #result-container > header {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: 100px;
+        flex-direction: column;
+    }
+
+    #result-container > header span {
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+
+    #models-cards-container {
+        height: calc(100% - 100px);
+    }
+}

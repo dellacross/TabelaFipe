@@ -1,0 +1,195 @@
+#wrapper > main > nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+#wrapper > main > nav > button {
+    background-color: rgb(185, 37, 37) !important;
+    color: #fff !important;
+    height: 35px;
+    border: none;
+    margin: 0 10px;
+    width: 120px;
+    font-size: 1.2em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#wrapper > main > nav > button:hover {
+    background-color: rgb(185, 37, 37) !important;
+    color: #fff !important;
+    opacity: 1 !important;
+}
+
+.curr-type {
+    background-color: rgb(185, 37, 37) !important;
+    color: #fff !important;
+    opacity: 1 !important;
+}
+
+#wrapper > main > #search-box {
+    height: 80px;
+    width: 630px;
+    display: flex;
+    background-color: rgb(185, 37, 37);
+    border-radius: 25px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 5px 5px 8px #a6a6a6, 0px 0px 0px #dbdbdb;
+    margin: 0;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+
+#wrapper > main > #search-box > #models-search-return {
+    width: 100%;
+    max-height: 300px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #efefef;
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#wrapper > main > #search-box > #models-search-return > span {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    padding-left: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#wrapper > main > #search-box > #models-search-return > span:hover {
+    color: rgb(185, 37, 37);
+    font-weight: 600;
+}
+
+#wrapper > main > #search-box > label {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #eeeeee;
+    border-radius: 15px;
+    padding: 0 15px;
+    font-size: 1.1em;
+}
+
+#wrapper > main > #search-box > .search-return-label {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#wrapper > main > #search-box > label ion-icon:first-child {
+    font-size: 1.2em;
+    margin-right: 15px;
+}
+
+#wrapper > main > #search-box > label input {
+    border: none;
+    font-size: 1.1em;
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    border-left: 1px solid #ccc;
+    background-color: transparent;
+    padding-left: 10px;
+    box-shadow: inset 2px 2px 2px #a7aaac, inset -2px -2px 2px #ffffff7e;
+    border-radius: 5px;
+}
+
+#search-preview-box {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+#search-preview-box > span {
+    border-radius: 15px;
+    background-color: #ccc;
+    padding: 15px;
+    font-weight: 550;
+    box-shadow: 2px 2px 2px #a7aaac, -2px -2px 2px #ffffff7e;
+}
+
+@media screen and (max-width: 768px) {
+    #wrapper > main > #search-box {
+        width: 90%;
+        height: 150px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 15px;
+    }
+
+    #wrapper > main > #search-box > button > ion-icon,
+    #wrapper > main > #search-box > label > ion-icon {
+        display: none;
+    }
+
+    #wrapper > main > #search-box > label,
+    #wrapper > main > #search-box > label > input {
+        width: 100%;
+    }
+
+    #wrapper > main > #search-box > label {
+        margin: 0;
+        padding: 5px;
+    }
+
+    #wrapper > main > #search-box > button {
+        width: 60%;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 2px 2px 2px #643636, -2px -2px 2px #e49b9b7e;
+    }
+
+    #wrapper > main > #search-box > button > span {
+        display: block;
+        font-size: 1.5rem;
+        color: grey;
+    }
+
+    #wrapper > main > nav > button {
+        margin: 0;
+        width: 30%;
+        font-size: 1rem;
+    }
+
+    #wrapper > main > nav > button:first-child {
+        border-top-right-radius: 0;
+    }
+
+    #wrapper > main > nav > button:last-child {
+        border-top-left-radius: 0;
+    }
+
+    #wrapper > main > nav > button:nth-child(2) {
+        border-radius: 0;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    }
+
+    #wrapper > main > #search-box > label ion-icon:first-child {
+        font-size: 1.5em;
+    }
+}

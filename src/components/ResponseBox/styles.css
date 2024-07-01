@@ -1,0 +1,23 @@
+#response-box {
+    position: fixed;
+    height: 30px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    top: 60px;
+    transform: translate(-50%, 50%);
+    border-radius: 10px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.error-response {
+    background-color: rgb(185, 37, 37, 0.9) !important;
+}
+
+.success-response {
+    background-color: rgb(43, 182, 115, 0.9) !important;
+}

@@ -1,0 +1,279 @@
+#wrapper > main > aside {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    background-color: #ccc;
+    flex-direction: column;
+}
+
+#wrapper > main > aside:first-child {
+    border-right: 2px solid rgb(185, 37, 37);
+}
+
+#wrapper > main > aside:last-child {
+    border-left: 2px solid rgb(185, 37, 37);
+}
+
+#wrapper > main > aside > h2 {
+    margin: 0 auto;
+    height: 50px;
+    text-decoration: underline rgb(185, 37, 37);
+    display: flex;
+    align-items: center;
+}
+
+#wrapper > main > aside > select {
+    width: 75%;
+    margin: 20px auto;
+    height: 35px;
+    box-shadow: inset 5px 5px 8px #a6a6a6, inset -5px -5px 8px #dbdbdb;
+    border: none;
+    padding: 0 10px;
+    background-color: transparent;
+    font-size: 1.05em;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#wrapper > main > #compare-section {
+    width: calc(100% - 300px);
+    height: 100%;
+    display: flex;
+}
+
+#wrapper > main > aside > span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wrapper > main > aside > span > button {
+    width: 30%;
+    height: 35px;
+    border: none;
+    background-color: rgb(185, 37, 37);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#wrapper > main > aside > span > button:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 1px solid #ccc;
+}
+
+#wrapper > main > aside > span > button:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 1px solid #ccc;
+}
+
+#wrapper > main > aside > nav > button:hover,
+#wrapper > main > aside > span > .active-btn {
+    background-color: rgb(120, 18, 18);
+    box-shadow: inset 5px 5px 8px rgb(106, 20, 20), inset -5px -5px 8px rgb(106, 18, 18);
+}
+
+#wrapper > main > aside > nav {
+    height: 65%;
+    width: 100%;
+    display: flex;
+    overflow-y: auto;
+    flex-direction: column;
+    padding: 5px 0;
+}
+
+#wrapper > main > aside > button {
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top: 10px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px #969696,  -3px -3px 5px #e6e6e6;
+    border: none;
+    background-color: rgb(185, 37, 37);
+    font-size: 2em;
+    font-weight: 600;
+    color: #ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper > main > aside > nav > button {
+    width: 80%;
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    background-color: rgb(145, 28, 28);
+    margin: 0 auto;
+    color: #fff;
+    font-size: 600;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#wrapper > main > aside > nav > button:first-child {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#wrapper > main > aside > nav > button:last-child {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+}
+
+#wrapper > main > #compare-section  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vehicle-switch-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 10px;
+    height: 50px;
+    z-index: 0;
+    margin: 0 auto;
+}
+  
+.vehicle-switch-wrapper > span {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.vehicle-switch-wrapper > button {
+    background-color: transparent;
+    font-size: 1.7em;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.toggleMenu-box button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vehicle-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 65px;
+}
+
+.vehicle-switch input {
+    display: none;
+}
+
+.slider {
+    background: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .1s;
+    box-shadow: inset 8px 8px 8px #c1bebe, inset -8px -8px 8px #dbdbdb;
+}
+
+.slider:before {
+    background: rgb(145, 28, 28);
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 2px;
+    position: absolute;
+    transition: .1s;
+    width: 26px;
+}
+
+input:checked + .slider {
+    background-color: transparent;
+    box-shadow: inset 8px 8px 8px #c1bebe, inset -8px -8px 8px #dbdbdb;
+}
+
+input:checked + .slider svg.moon {
+    fill: #fff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(33px);
+    background: rgb(145, 28, 28);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.slider span {
+    position: absolute;
+    width: 20px;
+    top: 7px;
+    z-index: 100;
+    font-weight: 600;
+}
+
+.slider span:first-child {
+    left: 10px;
+    fill: #fff;
+    transition: 0.1s;
+}
+
+.slider span:last-child {
+    left: 43px;
+    fill: #fff;
+    transition: 0.1s;
+}
+
+#clean-vehicle-card {
+    width: 80% !important;
+    border-radius: 15px !important;
+    display: flex;
+    font-size: 1.1em !important;
+    height: 35px !important;
+}
+
+#mobile-aside-btn {
+    left: 280px;
+    position: fixed;
+    display: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+    #wrapper > main > aside {
+        position: fixed;
+        left: 0;
+        height: calc(100% - 90px);
+    }
+
+    #mobile-aside-btn {
+        display: flex !important;
+    }
+}

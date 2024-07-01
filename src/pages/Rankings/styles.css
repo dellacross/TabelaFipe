@@ -1,0 +1,63 @@
+#ranking-main {
+    flex-direction: column;
+}
+
+#ranking-main > button {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 2.5em;
+}
+
+#ranking-main > button:hover {
+    color: rgb(185, 37, 37);
+}
+
+#ranking-main > button:first-child {
+    left: 10px;
+}
+
+#ranking-main > button:last-child {
+    right: 10px;
+}
+
+#ranking-main > button:disabled:hover {
+    color: #b7b7b7 !important;
+    cursor: default !important;
+}
+
+#ranking-main > section {
+    width: calc(100% - 280px);
+    height: calc(100% - 50px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#ranking-main > footer {
+    height: 50px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-dot {
+    font-size: 2em;
+    color: #ccc;
+}
+
+.curr-dot {
+    font-size: 2em;
+    color: rgb(185, 37, 37);
+}

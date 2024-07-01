@@ -1,0 +1,20 @@
+#search-preview-circle {
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    color: #000000;
+    margin: 0 15px;
+    box-shadow: 2px 2px 2px #a7aaac, -2px -2px 2px #ffffff7e;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+#search-preview-circle:hover {
+    box-shadow: 1px 1px 1px #a7aaac, -1px -1px 1px #ffffff7e;
+}

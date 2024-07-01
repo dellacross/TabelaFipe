@@ -1,0 +1,56 @@
+#model-card {
+    background-color: #e7e7e7;
+    border-radius: 15px;
+    width: 300px;
+    max-height: auto;
+    margin: 15px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    filter: drop-shadow(2px 2px 4px #999999);
+}
+
+#model-card:hover {
+    filter: drop-shadow(2px 2px 6px #999999);;
+    cursor: pointer;
+}
+
+#model-card > header {
+    height: 125px;
+    width: 100%;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#model-card > header ion-icon {
+    color: grey;
+    font-size: 4em;
+}
+
+#model-card > span {
+    height: 75px;
+    width: 100%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 600;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #model-card {
+        width: 90%;
+    }
+}

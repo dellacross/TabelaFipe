@@ -1,0 +1,80 @@
+#compare-card {
+    width: 400px;
+    height: 600px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px #969696,  -3px -3px 5px #e6e6e6;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#compare-card > header {
+    height: 300px;
+    width: 100%;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-bottom: 2px solid rgb(185, 37, 37);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    padding: 15px;
+    justify-content: flex-end;
+}
+
+#compare-card > header > button {
+    cursor: pointer;
+    font-size: 2em;
+    height: 50px;
+    width: 50px; 
+    background-color: transparent;
+    border: none;
+}
+
+.vehicle-type-1 {
+    background-image: url("../../assets/images/car-photo.jpeg");
+}
+
+.vehicle-type-2 {
+    background-image: url("../../assets/images/default-moto-img-wb.png");
+}
+
+.vehicle-type-3 {
+    background-image: url("../../assets/images/default-truck-img-wb.png");
+}
+
+#compare-card > main {
+    width: 100%;
+    height: calc(100% - 300px);
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+#compare-card > main > span {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+#compare-card > main > span > h6 {
+    margin: 0;
+    border-bottom: 2px solid rgb(185, 37, 37);
+    color: #000 !important
+}
+
+.max-value {
+    color: green !important
+}
+
+.min-value {
+    color: red !important
+}
+
+.equal-value {
+    color: yellow !important
+}

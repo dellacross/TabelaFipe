@@ -1,0 +1,225 @@
+#result-container > header {
+    text-align: center;
+}
+
+#vehicle-result-container {
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #e0e0e0;
+}
+
+#vehicle-photo-container {
+    max-height: 400px;
+    height: 40%;
+    width: 100%;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-bottom: 2px solid rgb(185, 37, 37);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+#vehicle-photo-container > span > ion-icon {
+    font-size: 2.3em;
+    color: rgb(185, 37, 37);
+    cursor: pointer;
+}
+
+.vehicle-carros {
+    background-image: url("../../assets/images/car-photo.jpeg");
+}
+
+.vehicle-motos {
+    background-image: url("../../assets/images/default-moto-img-wb.png");
+}
+
+.vehicle-caminhoes {
+    background-image: url("../../assets/images/default-truck-img-wb.png");
+}
+
+#vehicle-result-container > h3 {
+    width: 100%;
+    height: 75px;
+    border-radius: 0 !important;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+#vehicle-result-container > h3 > span {
+    color: rgb(185, 37, 37)
+}
+
+#vehicle-datas-container {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px #a6a6a6, -5px -5px 8px #dbdbdb;
+}
+
+#vehicle-datas-container > header {
+    height: 50px;
+    background-color: rgb(185, 37, 37);
+    display: flex;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#vehicle-datas-container > header > span {
+    color: #ccc;
+}
+
+#vehicle-datas-container > span {
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.5em;
+    flex-direction: column;
+    margin: 25px;
+}
+
+#vehicle-datas-container > span > h6 {
+    width: auto !important;
+    font-size: 1rem;
+    font-weight: 550;
+    margin: 0;
+    margin-bottom: 5px;
+    text-align: start;
+    color: grey;
+}
+
+#years-btns-container {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px 0;
+}
+
+#years-btns-container > button {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    margin: 0 25px;
+    background-color: #ccc;
+    font-weight: 600;
+    font-size: 1.1em;
+    box-shadow: 3px 3px 5px #a6a6a6, 0px 0px 0px #dbdbdb;
+    cursor: pointer;
+}
+
+#years-btns-container > .active-btn {
+    box-shadow: 1px 1px 1px #a6a6a6, 0px 0px 0px #dbdbdb;
+    color: rgb(185, 37, 37);
+}
+
+#mobile-years-bar {
+    display: none;
+    width: 100%;
+    height: 40px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ccc;
+    align-self: flex-start;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+#mobile-years-bar > button {
+    font-weight: 600;
+    height: 100%;
+    font-size: 1.1rem;
+    background-color: rgb(185, 37, 37);
+    border: none;
+    color: #fff;
+    padding: 0 15px;
+    border-right: 1px solid #ccc;
+    width: 100%;
+}
+
+#mobile-years-bar > button:last-child {
+    border-right: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #vehicle-datas-container {
+        width: 100%;
+        height: 60%;
+        border-radius: 0;
+        position: relative;
+        transform: none;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+        align-items: flex-start;
+    }
+
+    #vehicle-datas-container > span {
+        width: 40%;
+        margin: 10px 0;
+    }
+
+    #years-btns-container {
+        display: none;
+    }
+
+    #vehicle-datas-container > header {
+        border-radius: 0;
+    }
+
+    #mobile-years-bar {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #vehicle-datas-container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 75%;
+    }
+
+    #vehicle-photo-container {
+        height: 25%;
+    }
+
+    #vehicle-datas-container > span {
+        width: 100%;
+        padding: 0 25px;
+        font-size: 1.2rem;
+    }
+}

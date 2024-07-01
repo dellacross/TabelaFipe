@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(185, 37, 37);
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner   {
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+    background: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background: #cccccc;
+}

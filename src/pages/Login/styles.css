@@ -1,0 +1,107 @@
+#login-card {
+    max-width: 750px;
+    border-radius: 25px;
+    display: flex;
+    padding: 25px;
+    background-color: #ebebeb;
+    box-shadow: 1px 1px 1px #969696, -2px -2px 1px #e6e6e6;
+    margin: auto 0;
+}
+
+#login-card > section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-card > section > h2 {
+    margin: 0 auto;
+    text-decoration: underline rgb(185, 37, 37);
+}
+
+#login-card > section > form {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#login-card > section > form > label {
+    width: 100%;
+    display: flex;
+}
+
+#teste-label {
+    margin-bottom: 70px;
+}
+
+#login-card > section > form > label > input,
+#login-card > section > form > label > select {
+    max-width: 90%;
+    width: 300px;
+    margin: 20px auto;
+    height: 35px;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 8px #a6a6a6, inset -5px -5px 8px #dbdbdb;
+    border: none;
+    padding: 0 10px;
+    background-color: transparent;
+    font-size: 1.05em;
+    padding: 0 15px;
+}
+
+#login-card > section > form > label > input::placeholder {
+    color: #000;
+}
+
+#login-card > section > form > label > select {
+    cursor: pointer;
+}
+
+#login-card > section > form > button {
+    width: 200px;
+    margin: 10px 0;
+    height: 35px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px #969696,  -3px -3px 5px #e6e6e6;
+    border: none;
+    background-color: rgb(185, 37, 37);
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #ccc;
+    cursor: pointer;
+}
+
+#to-register {
+    font-size: 0.95rem;
+    display: flex;
+}
+
+#to-register > button {
+    background-color: transparent;
+    border: none;
+    color: rgb(185, 37, 37);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#to-register > button:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    #login-card {
+        width: 95%;
+        padding: 15px 10px;
+    }
+
+    #login-card > section > form > label > input  {
+        width: 100% !important;
+        max-width: 100%;
+        margin: 10px auto;
+    }
+}
