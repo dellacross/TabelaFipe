@@ -99,3 +99,4 @@ O objetivo deste sistema é fornecer uma interface intuitiva e eficiente para a 
   - Desenvolver formulário de cadastro na interface do usuário [Victor]
   - Integrar formulário de cadastro com o backend [Victor]
   - Testar processo de cadastro e autenticação [Vitor]
+
