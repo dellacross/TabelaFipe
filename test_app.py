@@ -15,7 +15,6 @@ def client():
 
 @pytest.fixture(autouse=True)
 def setup_and_teardown_db():
-    # Setup: Initialize the database before each test
     conn = sqlite3.connect('login_data.db')
     c = conn.cursor()
     c.execute("DROP TABLE IF EXISTS login_details2")
@@ -146,7 +145,7 @@ def test_remove_nonexistent_favorite():
     register(user_id, password, nome, estado)
     vehicle_url = "http://example.com/vehicle1"
     response = remove_from_favorites(user_id, vehicle_url)
-    assert response[1] == 400  # O índice 1 contém o status_code
+    assert response[1] == 400
     assert response[0]['message'] == "Veículo não está nos favoritos"
 
 def test_get_favorites():
