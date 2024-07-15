@@ -71,7 +71,7 @@ def test_register_user():
     assert status_code == 200
     assert response['message'] == "Registro feito com sucesso"
 
-def test_register_user_invalid_email():
+def test_register_user_invalid_email(client):
     user_id = 'invalid_email'
     password = 'StrongPass1!'
     nome = 'Test User'
@@ -80,19 +80,20 @@ def test_register_user_invalid_email():
     assert status_code == 400
     assert response['message'] == "Email inválido"
 
-def test_login_user():
-    user_id = 'test_user@example.com'
-    password = 'StrongPass1!'
+def test_login_user(client):
+    user_id = 'test2@teste.com'
+    password = 'Senha123!'
     nome = 'Test User'
     estado = 'SP'
     register(user_id, password, nome, estado)
     response, status_code = login(user_id, password)
     assert status_code == 200
     assert 'user' in response
+    assert 'token' in response
 
-def test_login_user_invalid_credentials():
+def test_login_user_invalid_credentials(client):
     user_id = 'test_user@example.com'
     password = 'WrongPass'
     response, status_code = login(user_id, password)
-    assert status_code == 400
+    assert status_code == 401
     assert response['message'] == "Credenciais inválidas"

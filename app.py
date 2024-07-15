@@ -81,23 +81,23 @@ def register(user_id: str, password: str, nome: str, estado: str):
     conn.commit()
     c.close()
     conn.close()
-    return {"message": "Registro feito com sucesso"}
+    return {"message": "Registro feito com sucesso"}, 200
 
 # For Login
 def login(user_id: str, password: str):
     conn = sqlite3.connect('login_data.db')
     c = conn.cursor()
 
-    user = c.execute("SELECT * FROM login_details2 WHERE USER_ID = ?", (user_id,)).fetchone()
-    if user and user[1] == password:
-        jwt_token = generate_token(user_id)
+    user = c.execute("SELECT * FROM login_details2 WHERE USER_ID = ? AND PASSWORD = ?", (user_id, password)).fetchone()
+    if user:
+        token = generate_token(user_id)
         c.close()
         conn.close()
-        return {"message": "Login feito com sucesso", "token": jwt_token}
+        return {"token": token, "user": user_id}, 200
     else:
         c.close()
         conn.close()
-        return {"message": "Email ou senha incorretos"}, 401
+        return {"message": "Credenciais inválidas"}, 401
 
 # For adding a car model to favorites
 def add_to_favorites(user_id: str, vehicle_url: str, tipo_veiculo: str):
