@@ -28,21 +28,26 @@ describe('Car Comparison Flow', () => {
   });
 
   it('navigate to compare page and select vehicles', () => {
-      cy.get('#mobile-nav-btn').click();
-      cy.wait(1000);
-      cy.get('#nav-mobile main button').contains('Comparar').click();
-      cy.url().should('include', '/compare');
+    cy.get('#mobile-nav-btn').click();
+    cy.wait(1000);
+    cy.get('#nav-mobile main button').contains('Comparar').click();
+    cy.url().should('include', '/compare');
+    
+    for (let i = 0; i < 3; i++) {
       cy.get('aside nav button').first().click();
       cy.wait(1000);
+    }
+
+    cy.get('#vehicle-switch-checkbox').then(($checkbox) => {
+      if (!$checkbox.is(':checked')) {
+        cy.get('.vehicle-switch').click();
+      }
+    });
+
+    for (let i = 0; i < 3; i++) {
       cy.get('aside nav button').first().click();
       cy.wait(1000);
-      cy.get('aside nav button').first().click();
-      cy.get('#vehicle-switch-checkbox').check().click({ force: true });
-      cy.get('aside nav button').first().click();
-      cy.wait(1000);
-      cy.get('aside nav button').first().click();
-      cy.wait(1000);
-      cy.get('aside nav button').first().click();
+    }
   });
 });
 
