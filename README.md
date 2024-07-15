@@ -83,3 +83,6 @@ O objetivo deste sistema é fornecer uma interface intuitiva e eficiente para a 
   - Testar ordenação e exibição dos rankings [Fred]
 - **História #8: Como usuário cadastrado, gostaria de ter uma página de perfil para acessar minhas informações**
   - Desenvolver uma interface para o perfil do usuário [Victor]
+
+
+Force CI
